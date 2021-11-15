@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="form-group form-quantity">
+            <label class="form-label" for="quantity">Nhập vào số lượng chuỗi cần kiểm tra</label>
+            <input type="number" placeholder="Nhập giá trị trong khoảng 1 đến 1000" class="form-input quantity-input" id="quantity">
+            <span class="form-msg show-error-msg"></span>
+        </div>
+        <div class="form-group form-string invisible">
+            <label class="form-label" for="string">Nhập vào chuỗi bạn muốn kiểm tra</label>
+            <span style="font-style: italic; font-size: 15px;">** Hãy gõ phím "Enter" sau mỗi lần nhập</span>
+            <br>
+            <span style="font-style: italic; font-size: 15px;">** Hãy tắt các phần mềm gõ tiếng Việt để tránh lỗi nhé !</span>
+            <input type="text" placeholder="Nhập vào chuỗi bạn muốn kiểm tra" class="form-input string-input" id="string">
+            <span class="form-msg count-remain-input"></span>
+        </div>
+        <div class="checked-result invisible"></div>
+        <button class="reset-btn">reset <span style="transform: rotate(90deg); display: inline-block;">&#8635</span></button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
