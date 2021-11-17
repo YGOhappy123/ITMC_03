@@ -58,7 +58,7 @@ function openTestForm() {
 
 function checkPossibleIp (stringValue) {
     letterArr = stringValue.split('')
-    const isPossibleIp = letterArr.every(x => acceptedLettersArr.includes(x))
+    const isPossibleIp = acceptedLettersArr.includes(letterArr.at(-1))
     if (!isPossibleIp) {
         testStringIp.value = stringValue.slice(0, -1)
         letterArr.pop()
